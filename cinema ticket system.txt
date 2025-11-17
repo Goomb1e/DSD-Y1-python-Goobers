@@ -1,0 +1,42 @@
+cinema = {
+    "Wonka": {"Time": "17:45", "Seats": 45},
+    "Dune 2": {"Time": "19:00", "Seats": 30},
+    "Blackphone 3": {"Time": "21:00", "Seats": 42}
+}
+
+def add_film(film, time, seat):
+    cinema[film] = {"time": time, "seat": seat}
+
+def update_film(film, time, seat):
+    cinema[film] = {"time": time, "seat": seat}
+
+
+select = int(input("1.View films, 2.Add film, 3.book ticket, 4.Delete film : "))
+if select == 1:
+    print(*cinema.keys())
+elif select == 2:
+    film = input("Input film name: ")
+    time = input("Input film time: ")
+    seat = input("Input film seats: ")
+    add_film(film, time, seat)
+    print(cinema)
+elif select == 3:
+    film = input("Please input the film to alter: ")
+    time = input("Input film time: ")
+    seat = input("Input film seats: ")
+    update_film(film, time, seat)
+    print(cinema)
+elif select == 4:
+    film = input("Input film to delete: ")
+    del cinema [film]
+    print(cinema)
+
+
+
+
+
+
+
+
+
+

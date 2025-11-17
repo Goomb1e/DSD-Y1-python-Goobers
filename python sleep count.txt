@@ -1,0 +1,19 @@
+hourspernight = int(input("How many hours per night do you sleep? "))
+
+hoursperweek = int(hourspernight) * 7 
+
+print ("You sleep",str(hoursperweek),"hours per week") 
+
+hourspermonth = float(hoursperweek) * 4.35 
+
+print ("You sleep",str(hourspermonth),"hours per month") 
+
+ 
+
+6
+
+
+
+
+
+
